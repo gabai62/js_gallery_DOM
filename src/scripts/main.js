@@ -8,7 +8,7 @@ thumbs.addEventListener('click', (ev) => {
 
   const target = ev.target;
 
-  if (target.tagName === 'IMG') {
+  if (target.tagName === 'IMG' || target.tagName === 'A') {
     const link = target.closest('a');
 
     if (link) {
